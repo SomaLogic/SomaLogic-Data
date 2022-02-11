@@ -1,10 +1,12 @@
 # SomaLogic-Data
 
-## File: example_data.adat
+## Files: 
+* example_data_v4.1_plasma.adat 
+* example_data.adat
 
 ### Overview
 
-The `example_data.adat` is intended to provide existing and prospective
+The ADAT files included here are intended to provide existing and prospective
 SomaLogic customers an example data file to enable analysis preparation prior
 to receipt of SomaScan data, and also for those generally curious about the
 SomaScan data deliverable. Data in this file is **not** intended for
@@ -32,16 +34,23 @@ to its left contains sample-specific (e.g. clinical) information.
 
 ### Example File Description
 
-This file, `example_data.adat`, contains a SomaScan V4 study from a set of
+The file, `example_data.adat`, contains a SomaScan V4.0 study from a set of
 human samples. The RFU measurements themselves and other identifiers
 have been altered to protect personally identifiable information (PII),
 but also retain underlying biological signal as much as possible.
-There are 192 total EDTA-plasma samples across two 96-well plate runs
+There are 192 total EDTA-plasma samples from four plate runs
 which are broken down by the following types:
 * 170 clinical samples
 * 10 calibrators (replicate controls for combining data across runs)
 * 6 QC samples (replicate controls used to assess run quality)
 * 6 Buffer samples (no protein controls)
+
+The second file, `example_data_v4.1_plasma.adat`, contains a SomaScan V4.1 study from the same set of human samples. RFU measurements have been altered protect PII in this file as well. There are 163 EDTA Plasma samples from four 96-well plate runs which include the following:
+* 163 clinical samples
+* 20 calibrators
+* 12 QC samples 
+* 12 Buffer samples 
+
 
 ### Data Processing
 
