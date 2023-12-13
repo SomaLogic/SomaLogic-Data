@@ -1,10 +1,5 @@
-# SomaLogic-Data
+# SomaLogic-Data <img src="figures/logo.png" align="right" height="138" alt=""/>
 
-## Files: 
-* example_data_v4.1_plasma.adat 
-* example_data.adat
-
-### Overview
 
 The ADAT files included here are intended to provide existing and prospective
 SomaLogic customers an example data file to enable analysis preparation prior
@@ -13,7 +8,33 @@ SomaScan data deliverable. Data in this file is **not** intended for
 biological analysis purposes or to provide any metrics for SomaScan data in
 general.
 
-### ADAT File Format
+---------------------
+
+## Files 
+
+* example_data.adat
+* example_data_v4.1_plasma.adat 
+
+
+## Installation
+
+The example ADAT files in this repository can be retrieved in one of two ways:
+
+1. Cloning the repository to your local machine
+
+1. Using `wget` to retrieve individual ADAT files from the repository; see 
+examples below
+
+```
+# Retrieve just the 5k (v4.0) ADAT
+wget https://github.com/SomaLogic/SomaLogic-Data/raw/master/example_data.adat
+
+# Retrieve just the 7k (v4.1) ADAT
+wget https://github.com/SomaLogic/SomaLogic-Data/raw/master/example_data_v4.1_plasma.adat
+```
+
+
+## ADAT File Format
 
 The ADAT file format is a SomaLogic-specific, tab-delimited text file designed
 to store SomaScan study data. This format is intended to be flexible and
@@ -32,7 +53,8 @@ measurements are in relative flourescent units (RFU). The data block directly
 above the measurement matrix describes the SOMAmer reagents and the data block
 to its left contains sample-specific (e.g. clinical) information.
 
-### Example File Description
+
+## Example File Description
 
 The file, `example_data.adat`, contains a SomaScan V4.0 study from a set of
 human samples. The RFU measurements themselves and other identifiers
@@ -52,10 +74,11 @@ The second file, `example_data_v4.1_plasma.adat`, contains a SomaScan V4.1 study
 * 12 Buffer samples 
 
 
-### Data Processing
+## Data Processing
 
 The standard V4 data normalization procedure for EDTA-plasma samples was
 applied to this dataset.
+
 
 ## Sample and Analyte Annotations
 
@@ -65,6 +88,7 @@ the column meta data, which contains detailed information
 and annotations about the analytes, `SeqIds`, and their targets.
 See section below for further information about available
 fields and their descriptions.
+
 
 ### Analyte Annotations:
 Information describing the *analytes* is found to the above
@@ -93,7 +117,7 @@ consist of the any or all of the following:
 | QcReference\_\<LLLLL\>        | QC sample reference value (for given QC lot)                     | PASS           |
 | CalQcRatio\_V4\_\<YY\>\_\<SSS\>\_\<PPP\> | Post calibration median QC ratio to reference (for given Year\_Study\_Plate) | 1.04 |
 
-#### Sample Annotations:
+### Sample Annotations:
 Information describing the *samples* is typically found to the left of
 the data matrix in a standard SomaLogic ADAT. This information may
 consist of clinical information provided by the client, or run-specific
@@ -129,8 +153,10 @@ some examples of what may be present in this section:
 | NormScale\_0\_005 | Median signal normalization scale factor (0.005% mix)  | 1.119754        |
 | NormScale\_20     | Median signal normalization scale factor (20% mix)     | 0.996148        |
 
+---------------------
+
 
 ## Parsers and Programatic Tools for \*.adat Files
 
-- R packge: [SomaDataIO](https://github.com/SomaLogic/SomaDataIO)
+- R package: [SomaDataIO](https://github.com/SomaLogic/SomaDataIO)
 - Python module: [canopy.py](https://github.com/SomaLogic/Canopy)
