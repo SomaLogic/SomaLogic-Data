@@ -1,19 +1,21 @@
-# SomaLogic-Data <img src="figures/logo.png" align="right" height="138" alt=""/>
+
+# SomaLogic-Data <a href="https://github.com/SomaLogic/SomaLogic-Data"><img src="figures/logo.png" align="right" height="120" alt="SomaLogic-Data GitHub" /></a>
 
 
-The ADAT files included here are intended to provide existing and prospective
-SomaLogic customers an example data file to enable analysis preparation prior
-to receipt of SomaScan data, and also for those generally curious about the
-SomaScan data deliverable. Data in this file is **not** intended for
-biological analysis purposes or to provide any metrics for SomaScan data in
-general.
+The ADAT files included in this repository are intended to provide
+existing and prospective SomaLogic customers an example data file
+to enable analysis preparation prior to receipt of SomaScan data,
+and also for those generally curious about the SomaScan data deliverable.
+Data in this file is **not** intended for biological analysis
+purposes or to provide any metrics for SomaScan data in general.
 
 ---------------------
 
+
 ## Files 
 
-* example_data.adat
-* example_data_v4.1_plasma.adat 
+* `example_data.adat`
+* `example_data_v4.1_plasma.adat`
 
 
 ## Installation
@@ -22,10 +24,10 @@ The example ADAT files in this repository can be retrieved in one of two ways:
 
 1. Cloning the repository to your local machine
 
-1. Using `wget` to retrieve individual ADAT files from the repository; see 
-examples below
+1. Using `wget` to retrieve individual ADAT files from the repository;
+   see examples below
 
-```
+```bash
 # Retrieve just the 5k (v4.0) ADAT
 wget https://github.com/SomaLogic/SomaLogic-Data/raw/master/example_data.adat
 
@@ -67,7 +69,11 @@ which are broken down by the following types:
 * 6 QC samples (replicate controls used to assess run quality)
 * 6 Buffer samples (no protein controls)
 
-The second file, `example_data_v4.1_plasma.adat`, contains a SomaScan V4.1 study from the same set of human samples. RFU measurements have been altered protect PII in this file as well. There are 163 EDTA Plasma samples from four 96-well plate runs which include the following:
+The second file, `example_data_v4.1_plasma.adat`, contains a SomaScan v4.1
+study from the same set of human samples.
+RFU measurements have been altered protect PII in this file as well.
+There are 163 EDTA Plasma samples from four 96-well plate runs which
+include the following:
 * 163 clinical samples
 * 20 calibrators
 * 12 QC samples 
@@ -88,7 +94,6 @@ the column meta data, which contains detailed information
 and annotations about the analytes, `SeqIds`, and their targets.
 See section below for further information about available
 fields and their descriptions.
-
 
 ### Analyte Annotations:
 Information describing the *analytes* is found to the above
@@ -156,7 +161,15 @@ some examples of what may be present in this section:
 ---------------------
 
 
-## Parsers and Programatic Tools for \*.adat Files
+## Parsers and Programatic Tools for ADAT Files
 
 - R package: [SomaDataIO](https://github.com/SomaLogic/SomaDataIO)
-- Python module: [canopy.py](https://github.com/SomaLogic/Canopy)
+- Python module: [Canopy](https://github.com/SomaLogic/Canopy)
+- Digital Tools: [DataDelve Statistics](https://somalogic.com/datadelve-statistics/)
+
+
+---------------
+
+[SomaLogic-Data](https://github.com/SomaLogic/SomaLogic-Data/) 
+was developed by the Bioinformatics Dept. at 
+[SomaLogic Operating Co., Inc.](http://www.somalogic.com)
