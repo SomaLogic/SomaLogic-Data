@@ -36,6 +36,15 @@ wget https://github.com/SomaLogic/SomaLogic-Data/raw/master/example_data_v4.1_pl
 ```
 
 
+## SomaScan Versions
+
+| commercial name | menu version | size  | example file                     |
+| --------------- | ------------ | ----- | -------------------------------- |
+| 5k              | V4           | 5284  | `example_data.adat`              |
+| 7k              | v4.1         | 7596  | `example_data_v4.1_plasma.adat`  |
+| 11k             | v5.0         | 11083 | `NA`                             |
+
+
 ## ADAT File Format
 
 The ADAT file format is a SomaLogic-specific, tab-delimited text file designed
