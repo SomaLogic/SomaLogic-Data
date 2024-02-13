@@ -29,10 +29,10 @@ The example ADAT files in this repository can be retrieved in one of two ways:
 
 ```bash
 # Retrieve just the 5k (v4.0) ADAT
-wget https://github.com/SomaLogic/SomaLogic-Data/raw/master/example_data.adat
+wget https://github.com/SomaLogic/SomaLogic-Data/raw/main/example_data.adat
 
 # Retrieve just the 7k (v4.1) ADAT
-wget https://github.com/SomaLogic/SomaLogic-Data/raw/master/example_data_v4.1_plasma.adat
+wget https://github.com/SomaLogic/SomaLogic-Data/raw/main/example_data_v4.1_plasma.adat
 ```
 
 
