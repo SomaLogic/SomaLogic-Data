@@ -12,10 +12,11 @@ purposes or to provide any metrics for SomaScan data in general.
 ---------------------
 
 
-## Files 
+## Files
 
 * `example_data.adat`
 * `example_data_v4.1_plasma.adat`
+* `example_data_v5.0_plasma.adat`
 
 
 ## Installation
@@ -33,6 +34,9 @@ wget https://github.com/SomaLogic/SomaLogic-Data/raw/main/example_data.adat
 
 # Retrieve just the 7k (v4.1) ADAT
 wget https://github.com/SomaLogic/SomaLogic-Data/raw/main/example_data_v4.1_plasma.adat
+
+# Retrieve just the 11k (v5.0) ADAT
+wget https://github.com/SomaLogic/SomaLogic-Data/raw/main/example_data_v5.0_plasma.adat
 ```
 
 
@@ -42,7 +46,7 @@ wget https://github.com/SomaLogic/SomaLogic-Data/raw/main/example_data_v4.1_plas
 | --------------- | ------------ | ----- | -------------------------------- |
 | 5k              | V4           | 5284  | `example_data.adat`              |
 | 7k              | v4.1         | 7596  | `example_data_v4.1_plasma.adat`  |
-| 11k             | v5.0         | 11083 | `NA`                             |
+| 11k             | v5.0         | 11083 | `example_data_v5.0_plasma.adat`  |
 
 
 ## ADAT File Format
@@ -85,14 +89,24 @@ There are 163 EDTA Plasma samples from four 96-well plate runs which
 include the following:
 * 163 clinical samples
 * 20 calibrators
-* 12 QC samples 
-* 12 Buffer samples 
+* 12 QC samples
+* 12 Buffer samples
+
+The third file, `example_data_v5.0_plasma.adat`, contains a SomaScan v5.0
+study from the same set of human samples.
+RFU measurements have been altered protect PII in this file as well.
+There are 163 EDTA Plasma samples from four 96-well plate runs which
+include the following:
+* 163 clinical samples
+* 60 calibrators
+* 36 QC samples
+* 36 Buffer samples
 
 
 ## Data Processing
 
-The standard V4 data normalization procedure for EDTA-plasma samples was
-applied to this dataset.
+The standard data normalization procedure for EDTA-plasma samples was
+applied to all three (3) datasets.
 
 
 ## Sample and Analyte Annotations
@@ -104,7 +118,9 @@ and annotations about the analytes, `SeqIds`, and their targets.
 See section below for further information about available
 fields and their descriptions.
 
-### Analyte Annotations:
+
+### Analyte Annotations
+
 Information describing the *analytes* is found to the above
 the data matrix in a standard SomaLogic ADAT. This information may
 consist of the any or all of the following:
@@ -131,7 +147,9 @@ consist of the any or all of the following:
 | QcReference\_\<LLLLL\>        | QC sample reference value (for given QC lot)                     | PASS           |
 | CalQcRatio\_V4\_\<YY\>\_\<SSS\>\_\<PPP\> | Post calibration median QC ratio to reference (for given Year\_Study\_Plate) | 1.04 |
 
-### Sample Annotations:
+
+### Sample Annotations
+
 Information describing the *samples* is typically found to the left of
 the data matrix in a standard SomaLogic ADAT. This information may
 consist of clinical information provided by the client, or run-specific
@@ -179,6 +197,6 @@ some examples of what may be present in this section:
 
 ---------------
 
-[SomaLogic-Data](https://github.com/SomaLogic/SomaLogic-Data/) 
-was developed by the Bioinformatics Dept. at 
+[SomaLogic-Data](https://github.com/SomaLogic/SomaLogic-Data/)
+was developed by the Bioinformatics Dept. at
 [SomaLogic Operating Co., Inc.](http://www.somalogic.com)
