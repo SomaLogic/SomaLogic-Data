@@ -75,7 +75,7 @@ The file, `example_data.adat`, contains a SomaScan V4.0 study from a set of
 human samples. The RFU measurements themselves and other identifiers
 have been altered to protect personally identifiable information (PII),
 but also retain underlying biological signal as much as possible.
-There are 192 total EDTA-plasma samples from four plate runs
+There are 192 total EDTA-plasma samples from four (4) plate runs
 which are broken down by the following types:
 * 170 clinical samples
 * 10 calibrators (replicate controls for combining data across runs)
@@ -85,7 +85,7 @@ which are broken down by the following types:
 The second file, `example_data_v4.1_plasma.adat`, contains a SomaScan v4.1
 study from the same set of human samples.
 RFU measurements have been altered protect PII in this file as well.
-There are 163 EDTA Plasma samples from four 96-well plate runs which
+There are 163 EDTA Plasma samples from four (4) 96-well plate runs which
 include the following:
 * 163 clinical samples
 * 20 calibrators
@@ -95,7 +95,7 @@ include the following:
 The third file, `example_data_v5.0_plasma.adat`, contains a SomaScan v5.0
 study from the same set of human samples.
 RFU measurements have been altered protect PII in this file as well.
-There are 163 EDTA Plasma samples from four 96-well plate runs which
+There are 163 EDTA Plasma samples from twelve (12) 96-well plate runs which
 include the following:
 * 163 clinical samples
 * 60 calibrators
