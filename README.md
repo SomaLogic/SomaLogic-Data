@@ -121,32 +121,34 @@ fields and their descriptions.
 
 ### Analyte Annotations
 
-Information describing the *analytes* is found to the above
-the data matrix in a standard SomaLogic ADAT. This information may
-consist of the any or all of the following:
+Information describing the *analytes* is found above the data matrix in a 
+standard SomaLogic ADAT. This information may consist of the any or all of the 
+following:
 
 | __Field__          | __Description__                       | __Example__    |
 | :----------------- | :------------------------------------ | :------------- |
-| SeqId                         | SomaLogic sequence identifier                                    | 2182-54\_1      |
-| SeqidVersion                  | Version of SOMAmer sequence                                      | 2              |
+| SeqId                         | SomaLogic SOMAmer reagent sequence identifier                    | 2182-54\_1     |
+| SeqIdVersion                  | Version of SOMAmer reagent sequence                              | 2              |
 | SomaId                        | Target identifier, of the form SLnnnnnn (8 characters in length) | SL000318       |
-| TargetFullName                | Target name curated for consistency with UniProt name            | Complement C4b |
-| Target                        | SomaLogic Target Name                                            | C4b            |
+| Target                        | Short description of SOMAmer reagent protein target              | C4b            |
+| TargetFullName                | Additional description of protein construct used for SOMAmer reagent development  | Complement C4b |
 | UniProt                       | UniProt identifier(s)                                            | P0C0L4  P0C0L5 |
-| EntrezGeneID                  | Entrez Gene Identifier(s)                                        | 720 721        |
-| EntrezGeneSymbol              | Entrez Gene Symbol names                                         | C4A C4B        |
-| Organism                      | Protein Source Organism                                          | Human          |
-| Units                         | Relative Fluorescence Units                                      | RFU            |
-| Type                          | SOMAmer target type                                              | Protein        |
-| Dilution                      | Dilution mix assignment                                          | 0.01%          |
+| EntrezGeneID                  | Entrez Gene identifier(s)                                        | 720 721        |
+| EntrezGeneSymbol              | Entrez Gene symbol(s)                                            | C4A C4B        |
+| Organism                      | Organism in which the SOMAmer reagent was developed              | Human          |
+| Units                         | Unit of measurement, e.g. Relative Fluorescence Units (RFU)      | RFU            |
+| Type                          | SOMAmer reagent target type                                      | Protein        |
+| Dilution                      | SOMAmer reagent mix dilution                                     | 5              |
 | PlateScale\_Reference         | PlateScale reference value                                       | 1378.85        |
 | CalReference                  | Calibration sample reference value                               | 1378.85        |
 | medNormRef\_ReferenceRFU      | Median normalization reference value                             | 490.342        |
-| Cal\_V4\_\<YY\>\_\<SSS\>\_\<PPP\> | Calibration scale factor (for given Year\_Study\_Plate)      | 0.64           |
+| Cal\_\<PlateId\>              | Calibration scale factor applied to samples (for a given plate)  | 0.64           |
 | ColCheck                      | QC acceptance criteria across all plates/sets                    | PASS           |
-| QcReference\_\<LLLLL\>        | QC sample reference value (for given QC lot)                     | PASS           |
-| CalQcRatio\_V4\_\<YY\>\_\<SSS\>\_\<PPP\> | Post calibration median QC ratio to reference (for given Year\_Study\_Plate) | 1.04 |
+| QcReference\_\<QCSampleId\>   | QC sample reference value (for given QC lot)                     |                |
+| CalQcRatio\_\<PlateId\>\_\<QCSampleId\> | QC ratio values (for each plate)                       | 1.04           |
 
+There may be additional fields in an ADAT that are not defined in the
+table above.
 
 ### Sample Annotations
 
